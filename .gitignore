@@ -1,1 +1,28 @@
-dataset
+# Datasets
+dataset/
+
+# Python bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Training checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# EXCEPT the best weights
+!Best_*.pth
+!Best_*.pt
+!Best_*.ckpt
+
+# Training outputs (logs, configuration, events)
+*.log
+.hydra/
+events.out.tfevents.*
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
